@@ -1,0 +1,173 @@
+/* stil bazik per body */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b2b50;
+    background: #ffffff;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.section-container {
+    width: min(92%, 1200px);
+    margin: 0 auto;
+}
+
+/* stili per header */
+.site-header {
+    width: 100%;
+    min-height: 60px;
+    padding: 0 3.7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.logo-plus {
+    color: #35a5dc;
+    font-size: 49px;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    color: #0b2b50;
+}
+
+.logo-text strong {
+    font-size: 17px;
+}
+
+.logo-text small {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    height: 60px;
+    margin-left: 28%;
+}
+
+.main-nav a {
+    font-size: 13px;
+    font-weight: bold;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    border-bottom-color: #0b2b50;
+}
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language-button {
+    border: 0;
+    background: transparent;
+    color: #0b2b50;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.language-button span {
+    margin-left: 4px;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+.button {
+    min-height: 40px;
+    padding: 0 20px;
+    border-radius: 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid transparent; 
+    transition: 0.2s;
+}
+
+.button-dark {
+    color: #ffffff;
+    background: #0b2b50;
+}
+
+.button-dark:hover {
+    background: #17436f;
+}
+
+.button-light {
+    color: #0b2b50;
+    border-color: #c4d9eb;
+    background: transparent;
+}
+
+.button-light:hover {
+    background: #ffffff;
+}
+
+.header-appointment {
+    min-height: 40px;
+    padding: 0 15px;
+    font-size: 13px;
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: #0b2b50;
+    font-size: 24px;
+}
+
+.down-arrow {
+    margin-left: 4px;
+    width: 10px;
+
+}
+
+/* perfundon stili per header */
