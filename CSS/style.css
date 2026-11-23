@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #0b2b50;
     background: #ffffff;
     font-size: 14px;
@@ -73,7 +73,7 @@ button {
     align-items: center;
     gap: 22px;
     height: 60px;
-    margin-left: 28%;
+    margin-left: 20%;
 }
 
 .main-nav a {
@@ -170,4 +170,136 @@ button {
 
 }
 
-/* perfundon stili per header */
+
+.eyebrow {
+    color: #0085d1;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin-bottom: 7px;
+}
+
+h1, h2, h3, h4 {
+    color: #0b2b50;
+}
+
+.site-footer {
+    color: #ffffff;
+    background: #082b4d;
+}
+
+.site-footer a {
+    color: inherit;
+}
+
+.footer-main {
+    min-height: 185px;
+    padding-top: 22px;
+    padding-bottom: 17px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.85fr 1.25fr 1.25fr 0.85fr;
+    gap: 30px;
+}
+
+.footer-brand {
+    padding-right: 20px;
+    border-right: 1px solid #42617d;
+}
+
+.footer-logo {
+    margin-bottom: 8px;
+}
+
+.footer-logo .logo-plus,
+.footer-logo .logo-text {
+    color: #ffffff;
+}
+
+.footer-logo .logo-plus {
+    font-size: 40px;
+    color:#0085d1;
+}
+
+.footer-brand p {
+    max-width: 190px;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer-column h4 {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 3px 0 13px;
+}
+
+.footer-column a,
+.footer-column p {
+    display: block;
+    color: #e2edf6;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 3px;
+}
+
+.hours-column p {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 2px;
+}
+
+.map-card {
+    height: 95px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #dcebf5;
+    color: #0b2b50 !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.map-lines {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(55deg, transparent 48%, #b7cfdf 49%, #b7cfdf 50%, transparent 51%),
+        linear-gradient(125deg, transparent 47%, #b7cfdf 48%, #b7cfdf 49%, transparent 50%),
+        linear-gradient(0deg, transparent 48%, #b7cfdf 49%, #b7cfdf 50%, transparent 51%);
+}
+
+.map-pin {
+    position: absolute;
+    top: 37px;
+    left: 48%;
+    color: #0085d1;
+    font-size: 17px;
+}
+
+.map-card strong {
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    background: #ffffff;
+    font-size: 9px;
+    z-index: 1;
+}
+
+.footer-bottom {
+    min-height: 40px;
+    border-top: 1px solid #42617d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+    color: #d9e5ef;
+}
