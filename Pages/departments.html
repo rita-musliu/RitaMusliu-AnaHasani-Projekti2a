@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medinova Polyclinic</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/departments.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/departments.css">
 </head>
 <body>
     <header class="site-header">
@@ -16,8 +16,8 @@
         <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">&#9776;</button>
 
         <nav class="main-nav" id="mainNav">
-            <a href="index.html">Home</a>
-            <a href="Pages/about.html">About Us</a>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
             <a class="active" href="Pages/departments.html">Departments <img class="down-arrow" src="images/down-arrow.png" alt=""></a>
             <a href="Pages/doctors.html">Doctors</a>
             <a href="Pages/services.html">Services</a>
@@ -34,9 +34,88 @@
 
 
     <main>
+        <section class="departments-hero">
+            <div class="departments-hero-copy">
+                <p class="eyebrow">OUR DEPARTMENTS</p>
+                <h1>Specialized Care<br>Across <span>Multiple Fields</span></h1>
+                <p>A wide range of medical departments, each led by<br class="desktop-break"> experienced specialists and equipped with modern technology.</p>
+            </div>
+            <div class="departments-hero-image"><img src="../images/departments.jpeg" alt="MediNova medical department"></div>
+        </section>
 
+
+        <section class="department-list section-container">
+            <div class="department-tools">
+                <label class="department-search">
+                    <span>⌕</span>
+                    <input type="search" id="departmentSearch" placeholder="Search a department..." aria-label="Search a department">
+                </label>
+                <select id="departmentFilter" aria-label="Filter departments">
+                    <option value="all">All Departments</option>
+                    <option value="medical">Medical Specialties</option>
+                    <option value="diagnostic">Diagnostic Services</option>
+                </select>
+            </div>
+
+            <div class="department-grid-full" id="departmentGrid">
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">♡</span><span class="department-card-copy"><strong>Cardiology</strong><small>Diagnosis and treatment of heart and cardiovascular conditions.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">♧</span><span class="department-card-copy"><strong>Dermatology</strong><small>Care for skin, hair and nail health, including medical and cosmetic treatments.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">♀</span><span class="department-card-copy"><strong>Gynecology</strong><small>Comprehensive women’s healthcare, from preventive care to specialized treatment.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">☻</span><span class="department-card-copy"><strong>Pediatrics</strong><small>Medical care for infants, children and adolescents.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">✿</span><span class="department-card-copy"><strong>Neurology</strong><small>Diagnosis and treatment of disorders of the brain, nervous system and spine.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">⌁</span><span class="department-card-copy"><strong>Orthopedics</strong><small>Treatment of bone, joint and musculoskeletal conditions and injuries.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">◎</span><span class="department-card-copy"><strong>Ophthalmology</strong><small>Comprehensive eye care, vision correction and treatment of eye diseases.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">♧</span><span class="department-card-copy"><strong>Dentistry</strong><small>General, preventive and cosmetic dental care for a healthy smile.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">✿</span><span class="department-card-copy"><strong>Endocrinology</strong><small>Diagnosis and management of hormonal and metabolic disorders.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">◉</span><span class="department-card-copy"><strong>Urology</strong><small>Care for the urinary system and male reproductive health.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="medical">
+                    <span class="department-icon-full">♧</span><span class="department-card-copy"><strong>General Medicine</strong><small>Primary healthcare, routine check-ups and management of common conditions.</small></span><span class="department-arrow">→</span>
+                </a>
+                <a class="department-card-full" href="specificdep.html" data-category="diagnostic">
+                    <span class="department-icon-full">⚗</span><span class="department-card-copy"><strong>Laboratory</strong><small>A wide range of diagnostic laboratory tests with fast and accurate results.</small></span><span class="department-arrow">→</span>
+                </a>
+            </div>
+            <p class="no-departments" id="noDepartments">No departments found.</p>
+        </section>
     </main>
 
-
+    <footer class="site-footer">
+        <div class="footer-main section-container">
+            <div class="footer-brand">
+                <a class="logo footer-logo" href="../index.html"><span class="logo-plus">+</span><span class="logo-text"><strong>MediNova</strong><small>Polyclinic</small></span></a>
+                <p>A modern polyclinic offering comprehensive, patient-centered healthcare across multiple specialties.</p>
+                <div class="social-links"><a href="#">◎</a><a href="#">f</a><a href="#">in</a></div>
+            </div>
+            <div class="footer-column"><h4>Quick Links</h4><a href="../index.html">Home</a><a href="about.html">About Us</a><a href="departments.html">Departments</a><a href="doctors.html">Doctors</a><a href="services.html">Services</a><a href="departments.html">Laboratory</a></div>
+            <div class="footer-column"><h4>Contact Us</h4><p>☎ +383 44 123 456</p><p>✉ info@medinova.com</p><p>⌖ Rr. Nëna Terezë 45,<br>Prishtinë, Kosovë</p></div>
+            <div class="footer-column hours-column"><h4>Working Hours</h4><p><span>◷ Mon — Fri</span><span>08:00 — 20:00</span></p><p><span>Saturday</span><span>08:00 — 16:00</span></p><p><span>Sunday</span><span>Closed</span></p></div>
+            <a class="map-card" href="contact.html"><span class="map-lines"></span><span class="map-pin">●</span><strong>View on Map</strong></a>
+        </div>
+        <div class="footer-bottom section-container"><span>© 2026 MediNova Polyclinic. All rights reserved.</span><div><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Cookie Settings</a></div></div>
+    </footer>
+    <script src="../JS/data.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/departments.js"></script>
+    <script src="../JS/common.js"></script>
 </body>
 </html>
