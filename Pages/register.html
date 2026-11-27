@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medinova Polyclinic</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header class="site-header">
+            <a class="logo" href="index.html">
+                <span class="logo-plus">+</span>
+                <span class="logo-text"><strong>MediNova</strong><small>Polyclinic</small></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">&#9776;</button>
+
+            <nav class="main-nav" id="mainNav">
+                <a class="active" href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="ments.html">Departments <img class="down-arrow" src="../images/down-arrow.png" alt=""></a>
+                <a href="doctors.html">Doctors</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="language-button">EN <img class="down-arrow" src="../images/down-arrow.png" alt=""><button>
+                <a href="login.html" class="button button-light">Log In</a>
+                <a href="register.html" class="button button-light">Register</a>
+                <a href="appointments.html" class="button button-dark header-appointment">Book an Appointment</a> 
+            </div>
+        </header>
+
+
+        <main>
+        <section class="auth-wrap">
+            <div class="auth-card">
+
+                <a class="logo" href="../index.html">
+                    <span class="logo-plus">+</span>
+                    <span class="logo-text"><strong>MediNova</strong><small>Polyclinic</small></span>
+                </a>
+
+                <p class="eyebrow" style="margin-top: 25px;">PATIENT PORTAL</p>
+
+                <h1>Create Your Account</h1>
+
+                <p class="muted">Register to make appointment requests and manage your patient details.</p>
+
+                <form id="registerForm">
+
+                    <div class="form-field">
+                        <label for="registerName">Full Name</label>
+                        <input class="input" id="registerName" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="registerEmail">Email Address</label>
+                        <input class="input" type="email" id="registerEmail" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="registerPhone">Phone Number</label>
+                        <input class="input" type="tel" id="registerPhone" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="registerPassword">Password</label>
+                        <div class="password-wrap">
+                            <input class="input" type="password" id="registerPassword" minlength="6" required>
+                            <button type="button" class="password-toggle">Show</button>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input class="input" type="password" id="confirmPassword" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="button button-dark" style="width: 100%;">Create Account</button>
+                    </div>
+
+                    <div class="notice" id="registerNotice"></div>
+
+                </form>
+
+                <p class="auth-bottom">Already have an account? <a href="login.html">Sign in</a></p>
+
+                <p class="auth-bottom"><a href="../index.html">← Back to MediNova</a></p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main section-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-plus">+</span>
+                    <span class="logo-text">
+                        <strong>MediNova</strong>
+                        <small>Polyclinic</small>
+                    </span>
+                </a>
+                <p>A modern polyclinic offering comprehensive, patient-centered healthcare across multiple specialities.</p>
+                <div class="social-links">
+                    <a href="#">@</a>
+                    <a href="#">f</a>
+                    <a href="#">in</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="Pages/about.html">About Us</a>
+                <a href="Pages/departments.html">Departments</a>
+                <a href="Pages/doctors.html">Doctors</a>
+                <a href="Pages/services.html">Services</a>
+                <a href="Pages/contact.html">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>☎ +383 44 123 456</p>
+                <p>✉ info@medinova.com</p>
+                <p>⌖ Rr. Nëna Terezë 45,<br>Prishtinë, Kosovë</p>
+            </div>
+            <div class="footer-column hours-column">
+                <h4>Working hours</h4>
+                <p>
+                    <span>◷ Mon — Fri</span>
+                    <span>08:00 — 20:00</span>
+                </p>
+                <p><span>Saturday</span>
+                    <span>08:00 — 16:00</span>
+                </p>
+                <p>
+                    <span>Sunday</span>
+                    <span>Closed</span>
+                </p>
+            </div>
+            <a href="Pages/contact.html" class="map-card">
+                <span class="map-lines"></span>
+                <span class="map-pin">●</span>
+                <strong>View on Map</strong>
+            </a>
+        </div>
+        <div class="footer-bottom section-container">
+            <span>© 2026 MediNova Polyclinic. All rights reserved.</span>
+            <div>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Cookie Settings</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="JS/index.js"></script>
+</body>
+</html>
